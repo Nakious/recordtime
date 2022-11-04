@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import ttk
 import logging
 from views.appadmin import WindowsAppAdmin
 from config.bbdd import Database
@@ -9,11 +10,13 @@ class WindowsApp():
         
         self.database = Database()
         self.database.main();
-        self.windowAdmin = WindowsAppAdmin()
+        #self.windowAdmin = WindowsAppAdmin()
         
         self.app=Tk()
         self.app.title("For WMcNeill")
-        self.app.geometry("500x200")
+        #photo = PhotoImage(file = "Any image file")
+        #self.app.iconphoto(False, photo)
+        self.app.geometry("600x200")
         self.app.grid
         self.app.columnconfigure(0,weight=1)
         self.app.columnconfigure(1,weight=1)
@@ -29,27 +32,28 @@ class WindowsApp():
 
     def window(self):
         
-        #list_client = ['Select a client']
         set_client=self.database.getClient()
         list_client = [r for r, in set_client]
-        optionsClient = StringVar(self.app)
-        optionsClient.set('Select a client')
-        omClient=OptionMenu(self.app,  optionsClient, *list_client)
-        omClient.grid(row=0,column=0,padx=5)
+        self.cbClient = ttk.Combobox(self.app, values=list_client,width=15)
+        self.cbClient.set('Select a client') 
+        self.cbClient.grid(row=0,column=0,padx=10,pady=30)
+        self.cbClient.bind("<<ComboboxSelected>>", self.selection_client)
         
-
+        self.windowAdmin = WindowsAppAdmin()
         self.btn = Button(self.app, text = 'ADMIN', command=self.windowAdmin.window)
         self.btn.grid(row=2,column=2,padx=5)  
         
-        #self.database.conexionbd.close()
-        
-        set_task=self.database.getTaskClient()
+    def selection_client(self, event):
+        client = self.cbClient.get()
+        set_task=self.database.getTaskClient(client)
         list_task = [r for r, in set_task]
-        optionsTask = StringVar(self.app)
-        optionsTask.set('Select a task')
-        omTask=OptionMenu(self.app, optionsTask, *list_task)
-        omTask.grid(row=0,column=1,padx=5,pady=5)
-        
+        self.cbTask = ttk.Combobox(self.app, values=list_task,width=15)
+        self.cbTask.set('Select a task') 
+        self.cbTask.grid(row=0,column=1,padx=10,pady=50)
+        #self.cbTask.set(selection) 
+
+            
+
 
         
 

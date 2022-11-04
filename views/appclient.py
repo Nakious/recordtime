@@ -1,8 +1,7 @@
 from tkinter import *
 from config.bbdd import Database
-from views.appclient import WindowsAppClient
 
-class WindowsAppAdmin:
+class WindowsAppClient:
     
     def __init__(self):
         self.database = Database()
@@ -12,17 +11,15 @@ class WindowsAppAdmin:
         
         self.appadmin=Tk()
         self.appadmin.geometry("750x250")
-        self.appadmin.title("Admin")
+        self.appadmin.title("Client")
         self.appadmin.columnconfigure(1, weight=3)
         self.appadmin.rowconfigure(1, weight=3)
         self.appadmin.resizable(0,0)
         
-        self.windowClient = WindowsAppClient()
-        
-        self.btn = Button(self.appadmin, text = 'Client', command=self.windowClient.window)
-        self.btn.grid(row=0,column=0,padx=50,pady=50)  
-        
         self.appadmin.mainloop()
+
+
+        
 
 
 

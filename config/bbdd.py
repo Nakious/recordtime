@@ -43,10 +43,12 @@ class Database:
         except sqlite3.Error as error:
             logger.info(error)
             
-    def getTaskClient(self):
+    def getTaskClient(self, client):
         try:
-            queryTask="SELECT NAME_TASK || '-' || DESCRIPTION AS task FROM TASK WHERE HIDE = 0 and ARCHIVE = 0"
-            set_task=self.conexionbd.execute(queryTask);
+            queryTask = "SELECT TASK.NAME_TASK || '-' || TASK.DESCRIPTION AS task FROM TASK  \
+            inner join CLIENT on CLIENT.ID_CLIENT=TASK.ID_CLIENT \
+            WHERE TASK.HIDE = 0 and TASK.ARCHIVE = 0 and CLIENT.NAME_CLIENT = ?"
+            set_task=self.conexionbd.execute(queryTask,[client]);
             return set_task
         except sqlite3.Error as error:
             logger.info(error)
