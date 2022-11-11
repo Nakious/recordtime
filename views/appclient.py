@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from config.bbdd import Database
 from config.log import logger
+from tkinter import messagebox
 
 
 class WindowsAppClient:
@@ -12,7 +13,7 @@ class WindowsAppClient:
 
         
     def window(self):
-        
+
         self.appclient=Tk()
 
       
@@ -51,52 +52,101 @@ class WindowsAppClient:
         self.tree.pack(side=BOTTOM)
         fetch=self.database.getClients(config=1)
         for data in fetch:
-            self.tree.insert('', 'end', values=(data))
+            self.tree.insert('', 'end', values=data)
             self.tree.bind("<Double-1>", self.OnDoubleClick)
 
         
         self.labelName = Label( self.appclient, text = "Client Name :")
         self.labelName.pack()
         self.labelName.place(x=250,y=30)
-        self.b = Entry(self.appclient)
-        self.b.insert(0, "")
-        self.b.pack(side=LEFT)
-        self.b.place(x=350,y=30)
+        self.entryName = Entry(self.appclient, state=DISABLED)
+        self.entryName.pack(side=LEFT)
+        self.entryName.place(x=350,y=30)
         
         self.labelDescripcion = Label( self.appclient, text = "Client Description :")
         self.labelDescripcion.pack()
         self.labelDescripcion.place(x=250,y=60)
-        self.c = Entry(self.appclient)
-        self.c.insert(0, "")
-        self.c.pack()
-        self.c.place(x=360,y=60)
+        self.entryDescription = Entry(self.appclient , state=DISABLED)
+        self.entryDescription.pack()
+        self.entryDescription.place(x=360,y=60)
 
         self.labelHide = Label( self.appclient, text = "Hide Client :")
         self.labelHide.pack()
         self.labelHide.place(x=250,y=90)
-        self.radioHide = Checkbutton(self.appclient)
+        self.varRadioHide = IntVar()
+        self.radioHide = Checkbutton(self.appclient, state=DISABLED, variable=self.varRadioHide)
         self.radioHide.pack()
         self.radioHide.place(x=350,y=90)
         
-        self.btn = Button(self.appclient, text = 'DELETE CLIENT', command=self.deleteClient)
-        self.btn.pack()
-        self.btn.place(x=300,y=120)
+        self.btnedit = Button(self.appclient, text = 'EDIT CLIENT', command=self.editField, state=DISABLED)
+        self.btnedit.pack()
+        self.btnedit.place(x=250,y=150)
+        
+        self.btnsave = Button(self.appclient, text = 'SAVE CLIENT', command=self.updateClient, state=DISABLED)
+        self.btnsave.pack()
+        self.btnsave.place(x=350,y=150)
+        
+        self.btndelete = Button(self.appclient, text = 'DELETE CLIENT', command=self.deleteClient, state=DISABLED)
+        self.btndelete.pack()
+        self.btndelete.place(x=300,y=200)
 
         self.appclient.mainloop()
 
 
     def OnDoubleClick(self, event):
+        self.cleanFields()
         item = self.tree.selection()
         for i in item:
-            print("you clicked on", self.tree.item(i, "values")[0])
-            
+            client = self.database.getClient(self.tree.item(i, "values")[0])
+            for data in client:
+                self.entryName.insert(0, data[1])
+                self.entryName.configure(state=DISABLED)
+                self.entryDescription.insert(0,data[2])
+                self.entryDescription.configure(state=DISABLED)
+                if data[3]==0:
+                    self.radioHide.deselect()
+                else:
+                    self.radioHide.select()
+                self.radioHide.configure(state=DISABLED)
+        self.btnedit.configure(state=NORMAL)
+
+
     def deleteClient(self):
         item = self.tree.selection()
         for i in item:
-            print("you clicked on", self.tree.item(i, "values")[0])
-            self.database.deleteClients(self.tree.item(i, "values")[0])
+            self.database.deleteClient(self.tree.item(i, "values")[0])
+                
+    def updateClient(self):
+        newNameClient = self.entryName.get()
+        newDescriptionClient = self.entryDescription.get()
+        newHideClient =  self.varRadioHide.get()
+        item = self.tree.selection()
+        for i in item:
+            print("ID CLIENTE:",self.tree.item(i, "values")[1])
+            idCLient = self.tree.item(i, "values")[1]
+        print(idCLient,newNameClient,newDescriptionClient,newHideClient)
+        self.database.updateClient(idCLient,newNameClient,newDescriptionClient,newHideClient)
+        self.refresh()
+        
+    def cleanFields(self):
+        self.entryName.configure(state=NORMAL)
+        self.entryName.delete(0, END)
+        self.entryDescription.configure(state=NORMAL)
+        self.entryDescription.delete(0, END)
+        self.radioHide.configure(state=NORMAL)
     
-    
+    def editField(self):
+        self.btnsave.configure(state=NORMAL)
+        self.btndelete.configure(state=NORMAL)
+        self.entryName.configure(state=NORMAL)
+        self.entryDescription.configure(state=NORMAL)
+        self.radioHide.configure(state=NORMAL)
+        self.btnedit.configure(state=DISABLED)
+
+    def refresh(self):
+        self.appclient.destroy()
+        self.__init__()
+        self.window()
     
 
 
