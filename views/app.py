@@ -61,11 +61,3 @@ class WindowsApp():
         self.cbTask.grid(row=0,column=1)
         #self.cbTask.set(selection) 
 
-            
-
-
-        
-
-        
-
-

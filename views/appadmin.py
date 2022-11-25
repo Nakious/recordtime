@@ -1,6 +1,7 @@
 from tkinter import *
 from config.bbdd import Database
 from views.appclient import WindowsAppClient
+from views.apptask import WindowsAppTask
 
 class WindowsAppAdmin:
     
@@ -19,8 +20,13 @@ class WindowsAppAdmin:
         
         self.windowClient = WindowsAppClient()
         
-        self.btn = Button(self.appadmin, text = 'Client', command=self.windowClient.window)
+        self.btn = Button(self.appadmin, text = 'Clients', command=self.windowClient.window)
         self.btn.grid(row=0,column=0,padx=50,pady=50)  
+        
+        self.windowTask = WindowsAppTask()
+        
+        self.btn = Button(self.appadmin, text = 'Tasks', command=self.windowTask.window)
+        self.btn.grid(row=0,column=1,padx=50,pady=50)  
         
         self.appadmin.mainloop()
 
