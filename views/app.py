@@ -32,7 +32,7 @@ class WindowsApp():
 
     def window(self):
         
-        set_client=self.database.getClients(config=None)
+        set_client=self.database.getClients(client=None, config=None)
         list_client = [r for r, in set_client]
         self.cbClient = ttk.Combobox(self.app, values=list_client,width=20)
         self.cbClient.set('Select a client') 

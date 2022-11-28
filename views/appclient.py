@@ -46,37 +46,37 @@ class WindowsAppClient:
         scrollbary.pack(side=RIGHT, fill=Y)
         scrollbarx.config(command=self.tree.xview)
         scrollbarx.pack(side=BOTTOM, fill=X)
-        self.tree.heading('CLIENT', text="CLIENT", anchor=W)
+        self.tree.heading('CLIENT', text="CLIENTS", anchor=W)
         self.tree.column('#0', stretch=NO, minwidth=0, width=0)
         self.tree.column('#1', stretch=NO, minwidth=0, width=200)
         self.tree.pack(side=BOTTOM)
-        fetch=self.database.getClients(config=1)
+        fetch=self.database.getClients(config=1,client=None)
         for data in fetch:
             self.tree.insert('', 'end', values=data)
             self.tree.bind("<Double-1>", self.OnDoubleClick)
 
         
-        self.labelName = Label( self.appclient, text = "Client Name :")
+        self.labelName = Label( self.appclient, text = "Name :")
         self.labelName.pack()
-        self.labelName.place(x=250,y=30)
+        self.labelName.place(x=230,y=30)
         self.entryName = Entry(self.appclient)
         self.entryName.pack(side=LEFT)
-        self.entryName.place(x=350,y=30)
+        self.entryName.place(x=310,y=30)
         
-        self.labelDescripcion = Label( self.appclient, text = "Client Description :")
+        self.labelDescripcion = Label( self.appclient, text = "Description :")
         self.labelDescripcion.pack()
-        self.labelDescripcion.place(x=250,y=60)
+        self.labelDescripcion.place(x=230,y=60)
         self.entryDescription = Entry(self.appclient )
         self.entryDescription.pack()
-        self.entryDescription.place(x=360,y=60)
+        self.entryDescription.place(x=330,y=60)
 
-        self.labelHide = Label( self.appclient, text = "Hide Client :")
+        self.labelHide = Label( self.appclient, text = "Hide :")
         self.labelHide.pack()
-        self.labelHide.place(x=250,y=90)
+        self.labelHide.place(x=230,y=90)
         self.varRadioHide = IntVar()
         self.radioHide = Checkbutton(self.appclient, variable=self.varRadioHide)
         self.radioHide.pack()
-        self.radioHide.place(x=350,y=90)
+        self.radioHide.place(x=330,y=90)
         
         self.btnedit = Button(self.appclient, text = 'EDIT CLIENT', command=self.editField, state=DISABLED)
         self.btnedit.pack()
@@ -90,21 +90,21 @@ class WindowsAppClient:
         self.btndelete.pack()
         self.btndelete.place(x=250,y=200)
         
-        self.btncreate = Button(self.appclient, text = 'CREATE CLIENT', command=self.createClient, bg='blue', fg='white')
+        self.btncreate = Button(self.appclient, text = 'CREATE NEW CLIENT', command=self.createClient, bg='blue', fg='white')
         self.btncreate.pack()
         self.btncreate.place(x=350,y=200)
         
-        self.btnadd = Button(self.appclient, text = 'ADD CLIENT', command=self.addClient, bg='blue', fg='white')
+        self.btnadd = Button(self.appclient, text = 'ADD NEW CLIENT', command=self.addClient, bg='blue', fg='white')
 
         
         self.appclient.mainloop()
 
 
-    def OnDoubleClick(self, event):
+    def OnDoubleClick(self, event):     
         self.cleanFields()
         item = self.tree.selection()
         for i in item:
-            client = self.database.getClient(self.tree.item(i, "values")[0])
+            client = self.database.getClients(self.tree.item(i, "values")[0], config=2)
             for data in client:
                 self.entryName.insert(0, data[1])
                 self.entryName.configure(state=DISABLED)
@@ -123,7 +123,6 @@ class WindowsAppClient:
         self.btncreate.destroy()
 
 
-
     def deleteClient(self):
         item = self.tree.selection()
         for i in item:
@@ -133,7 +132,7 @@ class WindowsAppClient:
     def updateClient(self):
         newNameClient = self.entryName.get()
         newDescriptionClient = self.entryDescription.get()
-        newHideClient =  self.varRadioHide.get()
+        newHideClient =  self.varRadioHide.get()#NOT WORKING
         item = self.tree.selection()
         for i in item:
             print("ID CLIENTE:",self.tree.item(i, "values")[1])
@@ -159,9 +158,11 @@ class WindowsAppClient:
     def createClient(self):
         newNameClient = self.entryName.get()
         newDescriptionClient = self.entryDescription.get()
-        newHideClient =  self.varRadioHide.get()
-        self.database.createClient(newNameClient,newDescriptionClient,newHideClient)
-        self.refresh()
+        newHideClient = self.varRadioHide.get()
+        answer = messagebox.askokcancel(title='Confirmation', message='Are you sure to create a client '+newNameClient+' ?', icon="info")
+        if answer:
+            self.database.createClient(newNameClient,newDescriptionClient,newHideClient)
+            self.refresh()
     
     def addClient(self):
         self.entryName.configure(state=NORMAL)
@@ -169,12 +170,16 @@ class WindowsAppClient:
         self.entryDescription.configure(state=NORMAL)
         self.entryDescription.delete(0, END)
         self.radioHide.configure(state=NORMAL)
-        self.btncreate = Button(self.appclient, text = 'CREATE CLIENT', command=self.createClient, bg='blue', fg='white')
+        self.radioHide.deselect()
+        self.btncreate = Button(self.appclient, text = 'CREATE NEW CLIENT', command=self.createClient, bg='blue', fg='white')
         self.btncreate.pack()
         self.btncreate.place(x=350,y=200)
         self.btnadd.pack_forget()
         self.btnadd.destroy()
-
+        self.btnedit.configure(state=DISABLED)
+        self.btndelete.configure(state=DISABLED)
+        self.btnsave.configure(state=DISABLED)
+        
     def refresh(self):
         self.appclient.destroy()
         self.__init__()
