@@ -36,80 +36,118 @@ class Database:
             
         self.conexionbd.commit()
         #self.conexionbd.close()
-  
-    def getClients(self, config):
+    
+    def getClients(self, config=None, client=None):
         try:
-            queryClient="SELECT NAME AS client FROM CLIENTS WHERE HIDE = 0 and ARCHIVE = 0"
+            query="SELECT NAME AS client FROM CLIENTS WHERE HIDE = 0 and ARCHIVE = 0 ORDER BY NAME"
             if config==1:
-                queryClient="SELECT NAME,ID_CLIENT FROM CLIENTS WHERE ARCHIVE = 0"
-            if config==2:
-                queryClient="SELECT * FROM CLIENTS WHERE NAME = ? AND ARCHIVE = 0"
-            set_client=self.conexionbd.execute(queryClient)
-            return set_client
+                query="SELECT NAME,ID_CLIENT FROM CLIENTS WHERE ARCHIVE = 0 ORDER BY NAME"
+            data=self.conexionbd.execute(query)
+            if config==2 and client!=None:
+                query="SELECT * FROM CLIENTS WHERE NAME = ? AND ARCHIVE = 0 ORDER BY NAME"
+                data=self.conexionbd.execute(query,[client])
+            if config==3 and client!=None:
+                query="SELECT NAME FROM CLIENTS WHERE ID_CLIENT = ? AND ARCHIVE = 0 ORDER BY NAME"
+                data=self.conexionbd.execute(query,[client])
+            return data
         except sqlite3.Error as error:
             logger.info(error)
 
     def getClient(self, client):
         try:
-            queryClient="SELECT * FROM CLIENTS WHERE NAME = ? AND ARCHIVE = 0"
-            set_client=self.conexionbd.execute(queryClient,[client])
-            return set_client
+            query="SELECT * FROM CLIENTS WHERE NAME = ? AND ARCHIVE = 0"
+            data=self.conexionbd.execute(query,[client])
+            return data
         except sqlite3.Error as error:
             logger.info(error)
             
     def updateClient(self, idCLient, NameClient, DescriptionClient, HideClient):
         try:
-            queryClient="UPDATE CLIENTS SET NAME = ?, DESCRIPTION = ?, HIDE = ?  WHERE CLIENTS.ID_CLIENT = ?"
-            self.conexionbd.execute(queryClient,[NameClient,DescriptionClient,HideClient,idCLient])
+            query="UPDATE CLIENTS SET NAME = ?, DESCRIPTION = ?, HIDE = ?  WHERE CLIENTS.ID_CLIENT = ?"
+            self.conexionbd.execute(query,[NameClient,DescriptionClient,HideClient,idCLient])
             self.conexionbd.commit()
         except sqlite3.Error as error:
             logger.info(error)
+    
     def createClient(self, NameClient, DescriptionClient, HideClient):
         try:
-            queryClient="INSERT INTO CLIENTS (NAME, DESCRIPTION, HIDE, ARCHIVE)  VALUES (?,?,?,0)"
-            self.conexionbd.execute(queryClient,[NameClient,DescriptionClient,HideClient])
+            query="INSERT INTO CLIENTS (NAME, DESCRIPTION, HIDE, ARCHIVE)  VALUES (?,?,?,0)"
+            self.conexionbd.execute(query,[NameClient,DescriptionClient,HideClient])
             self.conexionbd.commit()
         except sqlite3.Error as error:
             logger.info(error)
+    
     def deleteClient(self, client):#PROBAR
         try:
-            queryClient="UPDATE CLIENTS SET ARCHIVE = 1 WHERE CLIENTS.NAME = ?"
-            set_client=self.conexionbd.execute(queryClient,[client])
+            query="UPDATE CLIENTS SET ARCHIVE = 1 WHERE CLIENTS.NAME = ?"
+            data=self.conexionbd.execute(query,[client])
             self.conexionbd.commit()
-            return set_client
+            return data
         except sqlite3.Error as error:
             logger.info(error)
                    
-    def getTask(self, client):
-        try:
-            queryTask = "SELECT TASKS.NAME || '-' || TASKS.DESCRIPTION AS task FROM TASKS \
-                WHERE TASKS.HIDE = 0 and TASKS.ARCHIVE = 0 and TASKS.DEFAULT_TASK = 1"
-            if client!=None:
-                queryTaskClient = " UNION  \
-                SELECT TASKS.NAME || '-' || TASKS.DESCRIPTION AS task FROM TASKS  \
-                inner join CLIENTS on CLIENTS.ID_CLIENT=TASKS.ID_CLIENT \
-                WHERE TASKS.HIDE = 0 and TASKS.ARCHIVE = 0 and CLIENTS.NAME = ?" 
-                queryTask = queryTask + queryTaskClient
-                set_task=self.conexionbd.execute(queryTask,[client]);
-            else:
-                set_task=self.conexionbd.execute(queryTask)
-            return set_task
-        except sqlite3.Error as error:
-            logger.info(error)  
             
-    def getTasks(self, client, config):
+    def getTasks(self, config=None, task=None):
         try:
-            if config==1 and client==None:
-                queryClient="SELECT NAME,ID_TASK FROM TASKS WHERE ARCHIVE = 0"
-                set_client=self.conexionbd.execute(queryClient)
+            query="SELECT NAME AS client FROM CLIENTS WHERE HIDE = 0 and ARCHIVE = 0 ORDER BY NAME"
+            if config==1 and task==None:
+                query="SELECT NAME,ID_TASK FROM TASKS WHERE ARCHIVE = 0"
+                data=self.conexionbd.execute(query)
             else:#PROBAR
-                queryClient="SELECT * FROM TASKS WHERE NAME = ? AND ARCHIVE = 0"
-                set_client=self.conexionbd.execute(queryClient,[client])
-            return set_client
+                query="SELECT * FROM TASKS WHERE NAME = ? AND ARCHIVE = 0"
+                data=self.conexionbd.execute(query,[task])
+            return data
+        except sqlite3.Error as error:
+            logger.info(error)
+            
+    def getTask(self, task=None):
+        try:
+            query="SELECT * FROM TASKS ORDER BY NAME"
+            data=self.conexionbd.execute(query)
+            return data
+        except sqlite3.Error as error:
+            logger.info(error)
+        # try:
+        #     query = "SELECT TASKS.NAME || '-' || TASKS.DESCRIPTION AS task FROM TASKS \
+        #         WHERE TASKS.HIDE = 0 and TASKS.ARCHIVE = 0 and TASKS.DEFAULT_TASK = 1"
+        #     if client!=None:
+        #         queryTaskClient = " UNION  \
+        #         SELECT TASKS.NAME || '-' || TASKS.DESCRIPTION AS task FROM TASKS  \
+        #         inner join CLIENTS on CLIENTS.ID_CLIENT=TASKS.ID_CLIENT \
+        #         WHERE TASKS.HIDE = 0 and TASKS.ARCHIVE = 0 and CLIENTS.NAME = ?" 
+        #         query = query + queryTaskClient
+        #         data=self.conexionbd.execute(query,[client]);
+        #     else:
+        #         data=self.conexionbd.execute(query)
+        #     return data
+        # except sqlite3.Error as error:
+        #     logger.info(error)  
+            
+    def deleteTask(self, task):
+        try:
+            query="UPDATE TASKS SET ARCHIVE = 1 WHERE NAME = ?"
+            data=self.conexionbd.execute(query,[task])
+            self.conexionbd.commit()
+            return data
+        except sqlite3.Error as error:
+            logger.info(error)
+            
+    def updateTask(self, idTask, NameTask, DescriptionTask, HideTask, DefaultTask,NewClientTask):#PROBAR
+        try:
+            queryClient="UPDATE TASKS SET NAME = ?, DESCRIPTION = ?, HIDE = ?, DEFAULT_TASK = ?, ID_CLIENT = ?  WHERE TASKS.ID_TASK = ?"
+            self.conexionbd.execute(queryClient,[NameTask,DescriptionTask,HideTask,DefaultTask,NewClientTask,idTask])
+            self.conexionbd.commit()
+        except sqlite3.Error as error:
+            logger.info(error)
+            
+    def createTask(self, NameTask, DescriptionTask, HideTask, DefaultTask):#PROBAR
+        try:
+            queryClient="INSERT INTO TASKS (NAME, DESCRIPTION, HIDE, DEFAULT, ARCHIVE)  VALUES (?,?,?,?,0)"
+            self.conexionbd.execute(queryClient,[NameTask, DescriptionTask, HideTask, DefaultTask])
+            self.conexionbd.commit()
         except sqlite3.Error as error:
             logger.info(error)
 
 if __name__ == "__main__":
     app = Database()
     Database.main()
-
