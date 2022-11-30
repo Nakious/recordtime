@@ -116,7 +116,7 @@ class Database:
         except sqlite3.Error as error:
             logger.info(error)
             
-    def updateTask(self, idTask, NameTask, DescriptionTask, HideTask, DefaultTask,NewClientTask):#PROBAR
+    def updateTask(self, idTask, NameTask, DescriptionTask, HideTask, DefaultTask,NewClientTask):
         try:
             queryClient="UPDATE TASKS SET NAME = ?, DESCRIPTION = ?, HIDE = ?, DEFAULT_TASK = ?, ID_CLIENT = ?  WHERE TASKS.ID_TASK = ?"
             self.conexionbd.execute(queryClient,[NameTask,DescriptionTask,HideTask,DefaultTask,NewClientTask,idTask])
@@ -124,10 +124,10 @@ class Database:
         except sqlite3.Error as error:
             logger.info(error)
             
-    def createTask(self, NameTask, DescriptionTask, HideTask, DefaultTask):#PROBAR
+    def createTask(self, NameTask, DescriptionTask, HideTask, DefaultTask, newClientTask):#PROBAR
         try:
-            queryClient="INSERT INTO TASKS (NAME, DESCRIPTION, HIDE, DEFAULT, ARCHIVE)  VALUES (?,?,?,?,0)"
-            self.conexionbd.execute(queryClient,[NameTask, DescriptionTask, HideTask, DefaultTask])
+            queryClient="INSERT INTO TASKS (NAME, DESCRIPTION, HIDE, DEFAULT, ARCHIVE, ID_CLIENT)  VALUES (?,?,?,?,0)"
+            self.conexionbd.execute(queryClient,[NameTask, DescriptionTask, HideTask, DefaultTask, newClientTask])
             self.conexionbd.commit()
         except sqlite3.Error as error:
             logger.info(error)

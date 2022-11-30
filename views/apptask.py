@@ -193,7 +193,11 @@ class WindowsAppTask:
         newDescriptiontask = self.entryDescription.get()
         newHidetask =  self.varRadioHide.get()
         newDefaulttask=  self.varRadioDefault.get()
-        self.database.createTask(newNametask,newDescriptiontask,newHidetask,newDefaulttask)
+        client = self.database.getClients(self.cbClient.get(), config=2)
+        print(client)
+        for dataclient in client:
+            newClientTask = self.cbClient.set(dataclient[0])
+        self.database.createTask(newNametask,newDescriptiontask,newHidetask,newDefaulttask,newClientTask)
         self.refresh()
     
     def addtask(self):
