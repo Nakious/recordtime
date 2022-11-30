@@ -356,3 +356,618 @@
 2022-11-25 15:03:25,202 - INFO - Database exists.
 2022-11-25 15:03:25,204 - INFO - Database exists.
 2022-11-25 15:03:32,610 - INFO - Finished
+2022-11-25 15:27:42,373 - INFO - Started
+2022-11-25 15:27:42,374 - INFO - Need to create schema
+2022-11-25 15:27:50,768 - INFO - Database exists.
+2022-11-25 15:27:50,770 - INFO - Database exists.
+2022-11-25 15:27:55,170 - INFO - Finished
+2022-11-26 11:46:53,437 - INFO - Started
+2022-11-26 11:46:53,443 - INFO - Database exists.
+2022-11-26 11:47:18,303 - INFO - Database exists.
+2022-11-26 11:47:18,303 - INFO - Database exists.
+2022-11-26 11:47:40,331 - INFO - Started
+2022-11-26 11:47:40,332 - INFO - Database exists.
+2022-11-26 11:47:44,490 - INFO - Database exists.
+2022-11-26 11:47:44,493 - INFO - Database exists.
+2022-11-26 11:49:43,319 - INFO - Finished
+2022-11-26 11:49:44,754 - INFO - Started
+2022-11-26 11:49:44,757 - INFO - Database exists.
+2022-11-26 11:49:46,333 - INFO - Database exists.
+2022-11-26 11:49:46,336 - INFO - Database exists.
+2022-11-26 11:57:12,617 - INFO - Finished
+2022-11-26 11:57:37,323 - INFO - Started
+2022-11-26 11:57:37,324 - INFO - Database exists.
+2022-11-26 11:57:38,626 - INFO - Database exists.
+2022-11-26 11:57:38,628 - INFO - Database exists.
+2022-11-26 11:58:43,291 - INFO - Finished
+2022-11-26 11:58:44,302 - INFO - Started
+2022-11-26 11:58:44,303 - INFO - Database exists.
+2022-11-26 11:58:45,679 - INFO - Database exists.
+2022-11-26 11:58:45,681 - INFO - Database exists.
+2022-11-26 11:58:59,526 - INFO - Database exists.
+2022-11-26 11:59:13,579 - INFO - Finished
+2022-11-26 11:59:14,500 - INFO - Started
+2022-11-26 11:59:14,501 - INFO - Database exists.
+2022-11-26 11:59:15,576 - INFO - Database exists.
+2022-11-26 11:59:15,578 - INFO - Database exists.
+2022-11-26 11:59:26,082 - INFO - Database exists.
+2022-11-26 11:59:35,181 - INFO - Database exists.
+2022-11-26 12:02:32,017 - INFO - Finished
+2022-11-26 12:02:33,068 - INFO - Started
+2022-11-26 12:02:33,069 - INFO - Database exists.
+2022-11-26 12:02:34,350 - INFO - Database exists.
+2022-11-26 12:02:34,351 - INFO - Database exists.
+2022-11-26 12:02:37,823 - INFO - Finished
+2022-11-26 12:02:44,928 - INFO - Started
+2022-11-26 12:02:44,929 - INFO - Database exists.
+2022-11-26 12:02:45,894 - INFO - Database exists.
+2022-11-26 12:02:45,895 - INFO - Database exists.
+2022-11-26 12:02:49,674 - INFO - Finished
+2022-11-26 12:02:55,548 - INFO - Started
+2022-11-26 12:02:55,549 - INFO - Database exists.
+2022-11-26 12:02:56,660 - INFO - Database exists.
+2022-11-26 12:02:56,662 - INFO - Database exists.
+2022-11-26 12:03:05,080 - INFO - Database exists.
+2022-11-26 12:03:08,751 - INFO - Database exists.
+2022-11-26 12:03:14,319 - INFO - Finished
+2022-11-26 12:08:57,083 - INFO - Started
+2022-11-26 12:08:57,085 - INFO - Database exists.
+2022-11-26 12:09:50,840 - INFO - Started
+2022-11-26 12:09:50,841 - INFO - Database exists.
+2022-11-26 12:09:59,135 - INFO - Database exists.
+2022-11-26 12:09:59,137 - INFO - Database exists.
+2022-11-26 12:10:01,405 - INFO - Incorrect number of bindings supplied. The current statement uses 1, and there are 0 supplied.
+2022-11-26 12:10:55,807 - INFO - Finished
+2022-11-26 12:11:07,511 - INFO - Started
+2022-11-26 12:11:07,514 - INFO - Database exists.
+2022-11-26 12:12:15,368 - INFO - Database exists.
+2022-11-26 12:12:15,370 - INFO - Database exists.
+2022-11-26 12:14:02,502 - INFO - Incorrect number of bindings supplied. The current statement uses 1, and there are 0 supplied.
+2022-11-26 12:14:30,801 - INFO - Finished
+2022-11-26 12:14:45,550 - INFO - Started
+2022-11-26 12:14:45,551 - INFO - Database exists.
+2022-11-26 12:14:46,872 - INFO - Database exists.
+2022-11-26 12:14:46,874 - INFO - Database exists.
+2022-11-26 12:14:58,499 - INFO - Database exists.
+2022-11-26 12:14:58,501 - INFO - Database exists.
+2022-11-26 12:15:08,423 - INFO - Database exists.
+2022-11-26 12:15:16,500 - INFO - Database exists.
+2022-11-26 12:15:21,532 - INFO - Finished
+2022-11-26 12:15:42,530 - INFO - Started
+2022-11-26 12:15:42,534 - INFO - Database exists.
+2022-11-26 12:16:03,001 - INFO - Database exists.
+2022-11-26 12:16:03,003 - INFO - Database exists.
+2022-11-26 12:18:39,334 - INFO - Database exists.
+2022-11-26 12:20:39,711 - INFO - Database exists.
+2022-11-26 12:23:42,980 - INFO - Started
+2022-11-26 12:23:42,981 - INFO - Database exists.
+2022-11-26 12:23:44,914 - INFO - Database exists.
+2022-11-26 12:23:44,925 - INFO - Database exists.
+2022-11-26 12:24:41,459 - INFO - Started
+2022-11-26 12:24:41,462 - INFO - Database exists.
+2022-11-26 12:24:41,579 - INFO - Finished
+2022-11-26 12:24:42,892 - INFO - Database exists.
+2022-11-26 12:24:42,894 - INFO - Database exists.
+2022-11-26 12:28:27,596 - INFO - Started
+2022-11-26 12:28:27,597 - INFO - Database exists.
+2022-11-26 12:28:29,156 - INFO - Database exists.
+2022-11-26 12:28:29,156 - INFO - Database exists.
+2022-11-26 12:28:35,182 - INFO - Database exists.
+2022-11-26 12:28:44,900 - INFO - Finished
+2022-11-26 12:29:00,821 - INFO - Started
+2022-11-26 12:29:00,824 - INFO - Database exists.
+2022-11-26 12:29:02,310 - INFO - Database exists.
+2022-11-26 12:29:02,312 - INFO - Database exists.
+2022-11-26 12:29:37,475 - INFO - Database exists.
+2022-11-26 12:31:05,883 - INFO - Started
+2022-11-26 12:31:05,885 - INFO - Database exists.
+2022-11-26 12:31:07,346 - INFO - Database exists.
+2022-11-26 12:31:07,348 - INFO - Database exists.
+2022-11-26 12:31:12,389 - INFO - Database exists.
+2022-11-26 12:31:20,496 - INFO - Database exists.
+2022-11-26 12:31:42,901 - INFO - Finished
+2022-11-26 12:31:44,021 - INFO - Started
+2022-11-26 12:31:44,021 - INFO - Database exists.
+2022-11-26 12:31:45,510 - INFO - Database exists.
+2022-11-26 12:31:45,516 - INFO - Database exists.
+2022-11-26 12:31:50,726 - INFO - Database exists.
+2022-11-26 12:32:36,573 - INFO - Finished
+2022-11-26 12:32:37,559 - INFO - Started
+2022-11-26 12:32:37,559 - INFO - Database exists.
+2022-11-26 12:32:38,860 - INFO - Database exists.
+2022-11-26 12:32:38,866 - INFO - Database exists.
+2022-11-26 12:32:42,736 - INFO - 0
+2022-11-26 12:32:42,776 - INFO - Database exists.
+2022-11-26 12:33:02,450 - INFO - 0
+2022-11-26 12:33:02,487 - INFO - Database exists.
+2022-11-26 12:33:07,325 - INFO - 0
+2022-11-26 12:33:07,359 - INFO - Database exists.
+2022-11-26 12:34:32,638 - INFO - Finished
+2022-11-26 12:34:35,093 - INFO - Started
+2022-11-26 12:34:35,093 - INFO - Database exists.
+2022-11-26 12:34:36,715 - INFO - Database exists.
+2022-11-26 12:34:36,717 - INFO - Database exists.
+2022-11-26 12:38:35,695 - INFO - Finished
+2022-11-26 12:38:37,593 - INFO - Started
+2022-11-26 12:38:37,594 - INFO - Database exists.
+2022-11-26 12:38:39,085 - INFO - Database exists.
+2022-11-26 12:38:39,086 - INFO - Database exists.
+2022-11-26 12:38:43,224 - INFO - True
+2022-11-26 12:38:43,262 - INFO - Database exists.
+2022-11-26 12:38:52,903 - INFO - True
+2022-11-26 12:38:52,960 - INFO - Database exists.
+2022-11-26 12:39:02,289 - INFO - True
+2022-11-26 12:39:02,321 - INFO - Database exists.
+2022-11-26 12:39:08,465 - INFO - True
+2022-11-26 12:39:08,489 - INFO - Database exists.
+2022-11-26 12:39:20,047 - INFO - True
+2022-11-26 12:39:20,080 - INFO - Database exists.
+2022-11-26 12:39:59,801 - INFO - Finished
+2022-11-26 12:40:19,295 - INFO - Started
+2022-11-26 12:40:19,297 - INFO - Database exists.
+2022-11-26 12:40:20,979 - INFO - Database exists.
+2022-11-26 12:40:20,981 - INFO - Database exists.
+2022-11-26 12:40:35,681 - INFO - True
+2022-11-26 12:43:16,235 - INFO - Started
+2022-11-26 12:43:16,237 - INFO - Database exists.
+2022-11-26 12:43:17,495 - INFO - Database exists.
+2022-11-26 12:43:17,496 - INFO - Database exists.
+2022-11-26 12:43:22,052 - INFO - Database exists.
+2022-11-26 12:43:28,273 - INFO - Database exists.
+2022-11-26 12:43:36,949 - INFO - Database exists.
+2022-11-26 12:43:42,408 - INFO - Database exists.
+2022-11-26 12:43:51,596 - INFO - Database exists.
+2022-11-26 12:44:23,534 - INFO - Finished
+2022-11-26 12:44:24,724 - INFO - Started
+2022-11-26 12:44:24,725 - INFO - Database exists.
+2022-11-26 12:44:26,659 - INFO - Database exists.
+2022-11-26 12:44:26,661 - INFO - Database exists.
+2022-11-26 12:44:33,670 - INFO - Database exists.
+2022-11-26 12:44:47,177 - INFO - Database exists.
+2022-11-26 12:44:55,965 - INFO - Database exists.
+2022-11-26 12:47:05,961 - INFO - Finished
+2022-11-26 12:47:13,961 - INFO - Started
+2022-11-26 12:47:13,962 - INFO - Database exists.
+2022-11-26 12:47:15,485 - INFO - Database exists.
+2022-11-26 12:47:15,486 - INFO - Database exists.
+2022-11-26 12:47:20,877 - INFO - Database exists.
+2022-11-26 12:47:52,142 - INFO - Finished
+2022-11-26 12:48:03,064 - INFO - Started
+2022-11-26 12:48:03,065 - INFO - Database exists.
+2022-11-26 12:48:04,477 - INFO - Database exists.
+2022-11-26 12:48:04,479 - INFO - Database exists.
+2022-11-26 12:48:08,043 - INFO - Database exists.
+2022-11-26 12:48:14,750 - INFO - Database exists.
+2022-11-26 12:48:23,215 - INFO - Database exists.
+2022-11-26 12:49:17,884 - INFO - Finished
+2022-11-26 12:49:19,022 - INFO - Started
+2022-11-26 12:49:19,024 - INFO - Database exists.
+2022-11-26 12:49:20,333 - INFO - Database exists.
+2022-11-26 12:49:20,335 - INFO - Database exists.
+2022-11-26 12:49:25,468 - INFO - Database exists.
+2022-11-26 12:49:32,708 - INFO - Finished
+2022-11-28 08:19:19,633 - INFO - Started
+2022-11-28 08:19:19,638 - INFO - Database exists.
+2022-11-28 08:19:21,117 - INFO - Database exists.
+2022-11-28 08:19:21,119 - INFO - Database exists.
+2022-11-28 08:19:30,465 - INFO - Finished
+2022-11-28 08:20:30,166 - INFO - Started
+2022-11-28 08:20:30,167 - INFO - Database exists.
+2022-11-28 08:20:31,205 - INFO - Database exists.
+2022-11-28 08:20:31,207 - INFO - Database exists.
+2022-11-28 08:21:02,999 - INFO - Finished
+2022-11-28 08:22:00,107 - INFO - Started
+2022-11-28 08:22:00,108 - INFO - Database exists.
+2022-11-28 08:22:01,549 - INFO - Database exists.
+2022-11-28 08:22:01,551 - INFO - Database exists.
+2022-11-28 08:22:11,650 - INFO - Finished
+2022-11-28 08:22:20,769 - INFO - Started
+2022-11-28 08:22:20,770 - INFO - Database exists.
+2022-11-28 08:22:22,124 - INFO - Database exists.
+2022-11-28 08:22:22,126 - INFO - Database exists.
+2022-11-28 08:22:27,786 - INFO - Finished
+2022-11-28 08:33:09,131 - INFO - Started
+2022-11-28 08:33:09,136 - INFO - Database exists.
+2022-11-28 08:33:10,406 - INFO - Database exists.
+2022-11-28 08:33:10,408 - INFO - Database exists.
+2022-11-28 08:33:52,248 - INFO - Finished
+2022-11-28 08:34:47,903 - INFO - Started
+2022-11-28 08:34:47,904 - INFO - Database exists.
+2022-11-28 08:34:49,126 - INFO - Database exists.
+2022-11-28 08:34:49,128 - INFO - Database exists.
+2022-11-28 08:35:05,558 - INFO - Finished
+2022-11-28 08:35:13,131 - INFO - Started
+2022-11-28 08:35:13,132 - INFO - Database exists.
+2022-11-28 08:35:14,354 - INFO - Database exists.
+2022-11-28 08:35:14,356 - INFO - Database exists.
+2022-11-28 08:35:22,492 - INFO - Finished
+2022-11-28 08:35:46,507 - INFO - Started
+2022-11-28 08:35:46,508 - INFO - Database exists.
+2022-11-28 08:35:47,661 - INFO - Database exists.
+2022-11-28 08:35:47,664 - INFO - Database exists.
+2022-11-28 08:35:58,204 - INFO - Database exists.
+2022-11-28 08:36:17,433 - INFO - Finished
+2022-11-28 08:36:24,782 - INFO - Started
+2022-11-28 08:36:24,783 - INFO - Database exists.
+2022-11-28 08:36:26,042 - INFO - Database exists.
+2022-11-28 08:36:26,044 - INFO - Database exists.
+2022-11-28 08:36:31,226 - INFO - Database exists.
+2022-11-28 08:37:34,249 - INFO - Finished
+2022-11-28 08:45:05,075 - INFO - Started
+2022-11-28 08:45:05,077 - INFO - Database exists.
+2022-11-28 08:45:06,848 - INFO - Database exists.
+2022-11-28 08:45:06,850 - INFO - Database exists.
+2022-11-28 08:45:40,494 - INFO - Finished
+2022-11-28 08:46:01,030 - INFO - Started
+2022-11-28 08:46:01,032 - INFO - Database exists.
+2022-11-28 08:46:02,368 - INFO - Database exists.
+2022-11-28 08:46:02,371 - INFO - Database exists.
+2022-11-28 08:47:24,496 - INFO - Finished
+2022-11-28 09:06:48,553 - INFO - Started
+2022-11-28 09:06:48,555 - INFO - Database exists.
+2022-11-28 09:06:49,882 - INFO - Database exists.
+2022-11-28 09:06:49,885 - INFO - Database exists.
+2022-11-28 09:08:40,053 - INFO - Finished
+2022-11-28 09:09:00,876 - INFO - Started
+2022-11-28 09:09:00,877 - INFO - Database exists.
+2022-11-28 09:09:02,339 - INFO - Database exists.
+2022-11-28 09:09:02,341 - INFO - Database exists.
+2022-11-28 09:10:54,876 - INFO - Finished
+2022-11-28 09:11:04,070 - INFO - Started
+2022-11-28 09:11:04,074 - INFO - Database exists.
+2022-11-28 09:11:05,619 - INFO - Database exists.
+2022-11-28 09:11:05,621 - INFO - Database exists.
+2022-11-28 09:12:22,669 - INFO - Started
+2022-11-28 09:12:22,671 - INFO - Database exists.
+2022-11-28 09:12:26,682 - INFO - Database exists.
+2022-11-28 09:12:26,684 - INFO - Database exists.
+2022-11-28 09:13:44,957 - INFO - Database exists.
+2022-11-28 09:14:12,281 - INFO - Database exists.
+2022-11-28 09:20:15,295 - INFO - Finished
+2022-11-28 09:20:17,561 - INFO - Started
+2022-11-28 09:20:17,563 - INFO - Database exists.
+2022-11-28 09:20:19,186 - INFO - Database exists.
+2022-11-28 09:20:19,188 - INFO - Database exists.
+2022-11-28 09:50:44,953 - INFO - Finished
+2022-11-28 09:50:56,632 - INFO - Started
+2022-11-28 09:50:56,633 - INFO - Database exists.
+2022-11-28 09:51:30,750 - INFO - Database exists.
+2022-11-28 09:51:30,752 - INFO - Database exists.
+2022-11-28 09:53:18,621 - INFO - near "DEFAULT": syntax error
+2022-11-28 09:53:18,655 - INFO - Database exists.
+2022-11-28 09:54:34,798 - INFO - Finished
+2022-11-28 09:54:35,987 - INFO - Started
+2022-11-28 09:54:35,988 - INFO - Database exists.
+2022-11-28 09:54:37,189 - INFO - Database exists.
+2022-11-28 09:54:37,191 - INFO - Database exists.
+2022-11-28 09:54:41,902 - INFO - Finished
+2022-11-28 10:46:39,533 - INFO - Started
+2022-11-28 10:46:39,535 - INFO - Database exists.
+2022-11-28 10:46:40,679 - INFO - Database exists.
+2022-11-28 10:46:40,681 - INFO - Database exists.
+2022-11-28 10:48:59,545 - INFO - Finished
+2022-11-28 10:49:00,727 - INFO - Started
+2022-11-28 10:49:00,729 - INFO - Database exists.
+2022-11-28 10:49:02,015 - INFO - Database exists.
+2022-11-28 10:49:02,018 - INFO - Database exists.
+2022-11-28 10:50:27,767 - INFO - Finished
+2022-11-28 10:50:28,833 - INFO - Started
+2022-11-28 10:50:28,834 - INFO - Database exists.
+2022-11-28 10:50:29,911 - INFO - Database exists.
+2022-11-28 10:50:29,913 - INFO - Database exists.
+2022-11-28 10:51:57,201 - INFO - Finished
+2022-11-28 10:51:58,460 - INFO - Started
+2022-11-28 10:51:58,461 - INFO - Database exists.
+2022-11-28 10:51:59,917 - INFO - Database exists.
+2022-11-28 10:51:59,919 - INFO - Database exists.
+2022-11-28 10:52:21,905 - INFO - Database exists.
+2022-11-28 10:52:26,128 - INFO - Database exists.
+2022-11-28 10:53:14,806 - INFO - Finished
+2022-11-28 10:53:15,920 - INFO - Started
+2022-11-28 10:53:15,921 - INFO - Database exists.
+2022-11-28 10:53:17,305 - INFO - Database exists.
+2022-11-28 10:53:17,307 - INFO - Database exists.
+2022-11-28 10:53:29,696 - INFO - Database exists.
+2022-11-28 10:53:46,713 - INFO - Finished
+2022-11-28 10:54:40,924 - INFO - Started
+2022-11-28 10:54:40,925 - INFO - Need to create schema
+2022-11-28 10:55:04,672 - INFO - Database exists.
+2022-11-28 10:55:04,675 - INFO - Database exists.
+2022-11-28 10:56:19,416 - INFO - Finished
+2022-11-28 10:56:25,893 - INFO - Started
+2022-11-28 10:56:25,895 - INFO - Need to create schema
+2022-11-28 10:56:31,587 - INFO - Database exists.
+2022-11-28 10:56:31,589 - INFO - Database exists.
+2022-11-28 10:57:04,592 - INFO - Finished
+2022-11-28 10:57:05,667 - INFO - Started
+2022-11-28 10:57:05,668 - INFO - Database exists.
+2022-11-28 10:57:07,059 - INFO - Database exists.
+2022-11-28 10:57:07,061 - INFO - Database exists.
+2022-11-28 10:57:35,640 - INFO - Database exists.
+2022-11-28 10:57:35,642 - INFO - Database exists.
+2022-11-28 10:58:08,930 - INFO - Finished
+2022-11-28 10:58:10,056 - INFO - Started
+2022-11-28 10:58:10,058 - INFO - Database exists.
+2022-11-28 10:58:36,539 - INFO - Database exists.
+2022-11-28 10:58:36,541 - INFO - Database exists.
+2022-11-28 10:59:19,711 - INFO - Finished
+2022-11-28 11:25:32,110 - INFO - Started
+2022-11-28 11:25:32,111 - INFO - Need to create schema
+2022-11-28 11:25:33,460 - INFO - Database exists.
+2022-11-28 11:25:33,461 - INFO - Database exists.
+2022-11-28 11:26:30,189 - INFO - Finished
+2022-11-28 11:26:31,321 - INFO - Started
+2022-11-28 11:26:31,323 - INFO - Database exists.
+2022-11-28 11:26:32,481 - INFO - Database exists.
+2022-11-28 11:26:32,483 - INFO - Database exists.
+2022-11-28 11:26:57,971 - INFO - Finished
+2022-11-28 11:26:59,193 - INFO - Started
+2022-11-28 11:26:59,196 - INFO - Database exists.
+2022-11-28 11:27:00,739 - INFO - Database exists.
+2022-11-28 11:27:00,741 - INFO - Database exists.
+2022-11-28 11:27:05,643 - INFO - Finished
+2022-11-28 11:27:26,802 - INFO - Started
+2022-11-28 11:27:26,803 - INFO - Database exists.
+2022-11-28 11:27:27,912 - INFO - Database exists.
+2022-11-28 11:27:27,914 - INFO - Database exists.
+2022-11-28 11:27:32,862 - INFO - Finished
+2022-11-28 11:28:05,979 - INFO - Started
+2022-11-28 11:28:05,980 - INFO - Database exists.
+2022-11-28 11:28:07,310 - INFO - Database exists.
+2022-11-28 11:28:07,315 - INFO - Database exists.
+2022-11-28 11:28:12,634 - INFO - Finished
+2022-11-28 11:28:21,426 - INFO - Started
+2022-11-28 11:28:21,427 - INFO - Database exists.
+2022-11-28 11:28:22,480 - INFO - Database exists.
+2022-11-28 11:28:22,482 - INFO - Database exists.
+2022-11-28 11:28:26,626 - INFO - Finished
+2022-11-28 11:28:33,808 - INFO - Started
+2022-11-28 11:28:33,809 - INFO - Database exists.
+2022-11-28 11:28:34,879 - INFO - Database exists.
+2022-11-28 11:28:34,881 - INFO - Database exists.
+2022-11-28 11:28:38,336 - INFO - Finished
+2022-11-28 11:29:08,314 - INFO - Started
+2022-11-28 11:29:08,315 - INFO - Database exists.
+2022-11-28 11:29:09,681 - INFO - Database exists.
+2022-11-28 11:29:09,682 - INFO - Database exists.
+2022-11-28 11:29:16,559 - INFO - Finished
+2022-11-28 11:29:29,891 - INFO - Started
+2022-11-28 11:29:29,894 - INFO - Database exists.
+2022-11-28 11:29:30,846 - INFO - Database exists.
+2022-11-28 11:29:30,850 - INFO - Database exists.
+2022-11-28 11:29:40,789 - INFO - Finished
+2022-11-28 11:29:53,203 - INFO - Started
+2022-11-28 11:29:53,204 - INFO - Database exists.
+2022-11-28 11:29:54,450 - INFO - Database exists.
+2022-11-28 11:29:54,452 - INFO - Database exists.
+2022-11-28 11:29:59,630 - INFO - Finished
+2022-11-28 11:30:12,920 - INFO - Started
+2022-11-28 11:30:12,921 - INFO - Database exists.
+2022-11-28 11:30:14,346 - INFO - Database exists.
+2022-11-28 11:30:14,348 - INFO - Database exists.
+2022-11-28 11:30:21,810 - INFO - Finished
+2022-11-28 11:31:53,443 - INFO - Started
+2022-11-28 11:31:53,445 - INFO - Database exists.
+2022-11-28 11:31:54,845 - INFO - Database exists.
+2022-11-28 11:31:54,847 - INFO - Database exists.
+2022-11-28 11:32:02,276 - INFO - Finished
+2022-11-28 11:32:14,460 - INFO - Started
+2022-11-28 11:32:14,461 - INFO - Database exists.
+2022-11-28 11:32:15,660 - INFO - Database exists.
+2022-11-28 11:32:15,664 - INFO - Database exists.
+2022-11-28 11:32:20,843 - INFO - Finished
+2022-11-28 11:32:29,913 - INFO - Started
+2022-11-28 11:32:29,914 - INFO - Database exists.
+2022-11-28 11:32:32,364 - INFO - Database exists.
+2022-11-28 11:32:32,366 - INFO - Database exists.
+2022-11-28 11:32:36,559 - INFO - Finished
+2022-11-28 11:33:08,204 - INFO - Started
+2022-11-28 11:33:08,261 - INFO - Database exists.
+2022-11-28 11:33:10,033 - INFO - Database exists.
+2022-11-28 11:33:10,035 - INFO - Database exists.
+2022-11-28 11:33:15,571 - INFO - Finished
+2022-11-28 11:33:40,426 - INFO - Started
+2022-11-28 11:33:40,427 - INFO - Database exists.
+2022-11-28 11:33:41,570 - INFO - Database exists.
+2022-11-28 11:33:41,572 - INFO - Database exists.
+2022-11-28 11:35:55,809 - INFO - Finished
+2022-11-28 11:35:56,308 - INFO - Started
+2022-11-28 11:35:56,310 - INFO - Database exists.
+2022-11-28 11:36:01,429 - INFO - Database exists.
+2022-11-28 11:36:01,431 - INFO - Database exists.
+2022-11-28 11:58:46,766 - INFO - Finished
+2022-11-28 11:58:47,221 - INFO - Started
+2022-11-28 11:58:47,222 - INFO - Database exists.
+2022-11-28 11:58:49,517 - INFO - Finished
+2022-11-28 11:58:50,764 - INFO - Started
+2022-11-28 11:58:50,765 - INFO - Database exists.
+2022-11-28 11:58:52,220 - INFO - Database exists.
+2022-11-28 11:58:52,221 - INFO - Database exists.
+2022-11-28 12:01:11,430 - INFO - Finished
+2022-11-28 14:28:12,014 - INFO - Started
+2022-11-28 14:28:12,015 - INFO - Database exists.
+2022-11-28 14:28:13,471 - INFO - Database exists.
+2022-11-28 14:28:13,473 - INFO - Database exists.
+2022-11-28 14:31:05,797 - INFO - Finished
+2022-11-28 14:31:07,027 - INFO - Started
+2022-11-28 14:31:07,028 - INFO - Database exists.
+2022-11-28 14:31:08,273 - INFO - Database exists.
+2022-11-28 14:31:08,274 - INFO - Database exists.
+2022-11-28 14:31:29,071 - INFO - Finished
+2022-11-28 14:31:58,306 - INFO - Started
+2022-11-28 14:31:58,307 - INFO - Need to create schema
+2022-11-28 14:31:59,656 - INFO - Database exists.
+2022-11-28 14:31:59,658 - INFO - Database exists.
+2022-11-28 14:33:01,663 - INFO - Finished
+2022-11-28 14:33:02,826 - INFO - Started
+2022-11-28 14:33:02,827 - INFO - Database exists.
+2022-11-28 14:33:03,963 - INFO - Database exists.
+2022-11-28 14:33:03,965 - INFO - Database exists.
+2022-11-28 14:33:43,851 - INFO - near "DEFAULT": syntax error
+2022-11-28 14:33:43,889 - INFO - Database exists.
+2022-11-28 14:34:35,115 - INFO - Database exists.
+2022-11-28 14:47:43,069 - INFO - Finished
+2022-11-28 14:48:13,913 - INFO - Started
+2022-11-28 14:48:13,916 - INFO - Database exists.
+2022-11-28 14:48:23,194 - INFO - Database exists.
+2022-11-28 14:48:23,195 - INFO - Database exists.
+2022-11-28 14:55:16,765 - INFO - Started
+2022-11-28 14:55:16,769 - INFO - Database exists.
+2022-11-28 14:55:18,149 - INFO - Database exists.
+2022-11-28 14:55:18,151 - INFO - Database exists.
+2022-11-28 14:56:15,300 - INFO - Finished
+2022-11-28 14:56:21,774 - INFO - Started
+2022-11-28 14:56:21,776 - INFO - Database exists.
+2022-11-28 14:56:25,023 - INFO - Database exists.
+2022-11-28 14:56:25,025 - INFO - Database exists.
+2022-11-28 14:58:57,836 - INFO - Started
+2022-11-28 14:58:57,839 - INFO - Database exists.
+2022-11-28 14:58:59,338 - INFO - Database exists.
+2022-11-28 14:58:59,340 - INFO - Database exists.
+2022-11-28 14:59:56,979 - INFO - Started
+2022-11-28 14:59:56,980 - INFO - Database exists.
+2022-11-28 14:59:58,308 - INFO - Database exists.
+2022-11-28 14:59:58,310 - INFO - Database exists.
+2022-11-28 15:00:15,776 - INFO - Finished
+2022-11-28 15:00:15,970 - INFO - Started
+2022-11-28 15:00:15,973 - INFO - Database exists.
+2022-11-28 15:00:17,489 - INFO - Database exists.
+2022-11-28 15:00:17,491 - INFO - Database exists.
+2022-11-28 15:02:09,292 - INFO - Started
+2022-11-28 15:02:09,293 - INFO - Database exists.
+2022-11-28 15:02:10,469 - INFO - Database exists.
+2022-11-28 15:02:10,471 - INFO - Database exists.
+2022-11-28 15:03:17,531 - INFO - Finished
+2022-11-28 15:03:18,898 - INFO - Started
+2022-11-28 15:03:18,899 - INFO - Database exists.
+2022-11-28 15:03:19,870 - INFO - Database exists.
+2022-11-28 15:03:19,872 - INFO - Database exists.
+2022-11-28 15:04:55,028 - INFO - Finished
+2022-11-28 15:04:56,067 - INFO - Started
+2022-11-28 15:04:56,069 - INFO - Database exists.
+2022-11-28 15:04:57,373 - INFO - Database exists.
+2022-11-28 15:04:57,375 - INFO - Database exists.
+2022-11-28 15:05:11,711 - INFO - Finished
+2022-11-28 15:05:50,209 - INFO - Started
+2022-11-28 15:05:50,210 - INFO - Database exists.
+2022-11-28 15:05:51,546 - INFO - Database exists.
+2022-11-28 15:05:51,548 - INFO - Database exists.
+2022-11-28 15:06:10,009 - INFO - Finished
+2022-11-28 15:06:10,442 - INFO - Started
+2022-11-28 15:06:10,443 - INFO - Database exists.
+2022-11-28 15:06:13,568 - INFO - Database exists.
+2022-11-28 15:06:13,570 - INFO - Database exists.
+2022-11-28 15:06:26,389 - INFO - Finished
+2022-11-28 15:07:04,326 - INFO - Started
+2022-11-28 15:07:04,327 - INFO - Need to create schema
+2022-11-28 15:08:16,830 - INFO - Finished
+2022-11-28 15:08:30,798 - INFO - Started
+2022-11-28 15:08:30,799 - INFO - Database exists.
+2022-11-28 15:08:40,713 - INFO - Finished
+2022-11-28 15:08:46,443 - INFO - Started
+2022-11-28 15:08:46,444 - INFO - Need to create schema
+2022-11-28 15:08:50,950 - INFO - Database exists.
+2022-11-28 15:08:50,952 - INFO - Database exists.
+2022-11-28 15:09:19,175 - INFO - Finished
+2022-11-28 15:09:20,255 - INFO - Started
+2022-11-28 15:09:20,256 - INFO - Database exists.
+2022-11-28 15:09:21,689 - INFO - Database exists.
+2022-11-28 15:09:21,691 - INFO - Database exists.
+2022-11-28 15:09:28,670 - INFO - Finished
+2022-11-28 15:10:36,225 - INFO - Started
+2022-11-28 15:10:36,226 - INFO - Database exists.
+2022-11-28 15:10:37,419 - INFO - Database exists.
+2022-11-28 15:10:37,421 - INFO - Database exists.
+2022-11-28 15:10:59,825 - INFO - Finished
+2022-11-28 15:11:04,461 - INFO - Started
+2022-11-28 15:11:04,462 - INFO - Database exists.
+2022-11-28 15:11:06,349 - INFO - Database exists.
+2022-11-28 15:11:06,351 - INFO - Database exists.
+2022-11-28 15:11:13,222 - INFO - Database exists.
+2022-11-28 15:11:20,250 - INFO - Database exists.
+2022-11-28 15:11:33,167 - INFO - Finished
+2022-11-28 15:11:50,911 - INFO - Started
+2022-11-28 15:11:50,912 - INFO - Database exists.
+2022-11-28 15:11:52,308 - INFO - Database exists.
+2022-11-28 15:11:52,309 - INFO - Database exists.
+2022-11-28 15:11:58,368 - INFO - Finished
+2022-11-28 15:12:16,560 - INFO - Started
+2022-11-28 15:12:16,561 - INFO - Database exists.
+2022-11-28 15:12:17,968 - INFO - Database exists.
+2022-11-28 15:12:17,970 - INFO - Database exists.
+2022-11-28 15:13:02,074 - INFO - Finished
+2022-11-28 16:39:32,472 - INFO - Started
+2022-11-28 16:39:32,476 - INFO - Need to create schema
+2022-11-28 16:39:36,426 - INFO - Database exists.
+2022-11-28 16:39:36,428 - INFO - Database exists.
+2022-11-28 16:39:53,297 - INFO - Finished
+2022-11-28 16:40:04,526 - INFO - Started
+2022-11-28 16:40:04,528 - INFO - Database exists.
+2022-11-28 16:40:05,762 - INFO - Database exists.
+2022-11-28 16:40:05,763 - INFO - Database exists.
+2022-11-28 16:40:10,808 - INFO - Finished
+2022-11-28 16:40:15,678 - INFO - Started
+2022-11-28 16:40:15,679 - INFO - Database exists.
+2022-11-28 16:40:18,282 - INFO - Database exists.
+2022-11-28 16:40:18,284 - INFO - Database exists.
+2022-11-28 16:40:46,779 - INFO - Database exists.
+2022-11-28 16:40:58,372 - INFO - Finished
+2022-11-28 17:05:30,479 - INFO - Started
+2022-11-28 17:05:30,481 - INFO - Need to create schema
+2022-11-28 17:05:35,862 - INFO - Database exists.
+2022-11-28 17:05:35,871 - INFO - Database exists.
+2022-11-28 17:06:42,622 - INFO - Database exists.
+2022-11-28 17:06:42,624 - INFO - Database exists.
+2022-11-28 17:07:05,542 - INFO - near "DEFAULT": syntax error
+2022-11-28 17:07:05,590 - INFO - Database exists.
+2022-11-28 17:07:22,278 - INFO - near "DEFAULT": syntax error
+2022-11-28 17:07:22,325 - INFO - Database exists.
+2022-11-28 17:07:28,419 - INFO - Finished
+2022-11-28 17:17:19,724 - INFO - Started
+2022-11-28 17:17:19,725 - INFO - Database exists.
+2022-11-28 17:17:21,454 - INFO - Database exists.
+2022-11-28 17:17:21,456 - INFO - Database exists.
+2022-11-28 17:18:23,457 - INFO - Finished
+2022-11-28 17:18:24,779 - INFO - Started
+2022-11-28 17:18:24,780 - INFO - Database exists.
+2022-11-28 17:18:25,913 - INFO - Database exists.
+2022-11-28 17:18:25,914 - INFO - Database exists.
+2022-11-28 17:18:32,733 - INFO - near "DEFAULT": syntax error
+2022-11-28 17:18:32,780 - INFO - Database exists.
+2022-11-28 17:18:47,457 - INFO - Finished
+2022-11-28 17:18:54,309 - INFO - Started
+2022-11-28 17:18:54,312 - INFO - Database exists.
+2022-11-28 17:18:56,032 - INFO - Database exists.
+2022-11-28 17:18:56,035 - INFO - Database exists.
+2022-11-28 17:20:04,748 - INFO - Started
+2022-11-28 17:20:04,749 - INFO - Database exists.
+2022-11-28 17:20:06,266 - INFO - Database exists.
+2022-11-28 17:20:06,267 - INFO - Database exists.
+2022-11-28 17:20:30,705 - INFO - Finished
+2022-11-28 17:20:31,500 - INFO - Started
+2022-11-28 17:20:31,523 - INFO - Database exists.
+2022-11-28 17:20:32,946 - INFO - Database exists.
+2022-11-28 17:20:32,949 - INFO - Database exists.
+2022-11-28 17:21:46,232 - INFO - Started
+2022-11-28 17:21:46,235 - INFO - Database exists.
+2022-11-28 17:21:48,253 - INFO - Database exists.
+2022-11-28 17:21:48,255 - INFO - Database exists.
+2022-11-28 17:22:54,964 - INFO - Started
+2022-11-28 17:22:54,966 - INFO - Database exists.
+2022-11-28 17:22:56,647 - INFO - Database exists.
+2022-11-28 17:22:56,650 - INFO - Database exists.
+2022-11-28 17:24:10,104 - INFO - Started
+2022-11-28 17:24:10,108 - INFO - Database exists.
+2022-11-28 17:24:11,909 - INFO - Database exists.
+2022-11-28 17:24:11,911 - INFO - Database exists.
+2022-11-28 17:25:06,388 - INFO - Started
+2022-11-28 17:25:06,395 - INFO - Database exists.
+2022-11-28 17:25:13,306 - INFO - Database exists.
+2022-11-28 17:25:13,308 - INFO - Database exists.
+2022-11-28 17:26:00,842 - INFO - Started
+2022-11-28 17:26:00,843 - INFO - Database exists.
+2022-11-28 17:26:04,263 - INFO - Database exists.
+2022-11-28 17:26:04,264 - INFO - Database exists.
+2022-11-28 17:26:10,185 - INFO - near "DEFAULT": syntax error
+2022-11-28 17:26:10,218 - INFO - Database exists.
+2022-11-28 17:26:16,948 - INFO - Finished

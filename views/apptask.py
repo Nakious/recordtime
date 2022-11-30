@@ -172,6 +172,10 @@ class WindowsAppTask:
                 self.entryName.insert(0, data[1])
                 self.entryDescription.insert(0,data[2])
                 if data[3]==0:
+                    self.radioDefault.deselect()
+                else:
+                    self.radioDefault.select()
+                if data[4]==0:
                     self.radioHide.deselect()
                 else:
                     self.radioHide.select()
